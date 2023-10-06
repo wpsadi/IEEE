@@ -1,0 +1,160 @@
+/* CSS for Cards */
+body {
+    background-color: rgb(15,16,20);
+    margin: 32px;
+}
+
+body>h1 {
+    border-radius: 8px;
+    //margin-top: -32px;
+    //margin-left:-32px;
+    //margin-right:-32px;
+    background: url("bgi.webp");
+    background-size: cover;
+    background-repeat:no-repeat;
+    width:100%;
+    display:flex;
+    height: 400px;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    font-family: cursive;
+    margin-bottom: 1.2em;
+}
+
+#marvel-movies {
+    position:relative;
+    top:-8em;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie-card {
+    width: min-content;
+    background: linear-gradient(to top, #001d3d, #3d5a80);
+    //background-color: #ffffff;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #000000;
+    display: grid;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: scale(1.1);
+}
+
+.movie-card.not-released {
+    box-shadow: 0 0 8px #ff0000;
+}
+
+.movie-card img {
+    border:2px solid #fff;
+    border-radius:6px;
+    width: 256px;
+}
+
+.movie-name {
+    font-family:monospace;
+    background: linear-gradient(to right, #0096c7, #623CEA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.3em;
+}
+
+.release-year {
+    color:#fff;
+    font-weight: bold;
+}
+
+/* CSS for Movie Dialog */
+#dialog-backdrop {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    inset: 0;
+}
+
+#dialog-box {
+    border-radius:8px;
+    background: radial-gradient(at top right, #001d3d 20%, #3d5a80);
+    //background-color: #2B4051;
+    padding: 32px;
+    color: #fff;
+    box-shadow: 0 0 32px #000000;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 16px 32px;
+    position: absolute;
+    inset: 64px calc((100% - 1060px) / 2);
+    transition: all 0.5s;
+    overflow-y: auto;
+}
+
+#dialog-title {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #fff;
+    grid-column: 1 / 3;
+}
+
+#dialog-title button {
+    font-size: 2em;
+    padding-inline: 10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 32px;
+    cursor:pointer;
+    right: 32px;
+}
+
+#dialog-poster {
+    margin-top: 1.25em;
+    grid-row: 2 / 5;
+}
+
+@media screen and (max-width: 1188px) {
+    #dialog-box {
+        grid-template-columns: 1fr;
+        inset: 64px calc((100% - 646px) / 2);
+    }
+
+    #dialog-title {
+        justify-self: center;
+        grid-column: auto;
+    }
+
+    #dialog-title h1 {
+        padding-inline: 64px;
+    }
+
+    #dialog-poster {
+        justify-self: center;
+        grid-row: auto;
+    }
+
+    #dialog-trailer {
+        grid-row: 5 / auto;
+    }
+}
+
+@media screen and (max-width: 774px) {
+    /* to do: responsive */
+
+        #dialog-box {
+        inset: 0;
+    }
+
+    #dialog-trailer {
+        justify-self: center;
+    }
+}
