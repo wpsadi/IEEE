@@ -1,20 +1,20 @@
 const movieData = {
     "Avengers: Secret Wars": {
-        trailerUrl: "",
+        trailerUrl: "/images/not_available.jpg",
         description: "Marvel Studios' Avengers: Secret Wars will arrive in theaters on May 7, 2027.",
         details: {
             releaseDate: "May 7, 2027"
         }
     },
     "Avengers: The Kang Dynasty": {
-        trailerUrl: "",
+        trailerUrl: "/images/not_available.jpg",
         description: "Marvel Studios' Avengers: The Kang Dynasty will arrive in theaters on May 1, 2026.",
         details: {
             releaseDate: "May 1, 2026"
         }
     },
     "Fantastic Four": {
-        trailerUrl: "",
+        trailerUrl: "/images/not_available.jpg",
         description: "Marvel Studios' Fantastic Four arrives in theaters on May 2, 2025.",
         details: {
             directors: ["Matt Shakman"],
@@ -22,7 +22,7 @@ const movieData = {
         }
     },
     "Blade": {
-        trailerUrl: "",
+        trailerUrl: "/images/not_available.jpg",
         description: "Marvel Studios' Blade arrives in theaters on February 14, 2025.",
         details: {
             cast: ["Mahershala Ali"],
@@ -30,7 +30,7 @@ const movieData = {
         }
     },
     "Thunderbolts": {
-        trailerUrl: "",
+        trailerUrl: "/images/not_available.jpg",
         description: "Marvel Studios' Thunderbolts will arrive in theaters on December 20, 2024.",
         details: {
             cast: ["David Harbour", "Hannah John-Kamen", "Julia Louis-Dreyfus", "Sebastian Stan", "Wyatt Russell", "Olga Kurylenko", "Florence Pugh"],
@@ -38,7 +38,7 @@ const movieData = {
         }
     },
     "Captain America: Brave New World": {
-        trailerUrl: "",
+        trailerUrl: "/images/not_available.jpg",
         description: "Marvel Studios' Captain America: Brave New World will arrive in theaters on July 26, 2024.",
         details: {
             directors: ["Julius Onah"],
@@ -47,7 +47,7 @@ const movieData = {
         }
     },
     "Untitled Deadpool Movie": {
-        trailerUrl: "",
+        trailerUrl: "/images/not_available.jpg",
         description: "Coming to theaters May 3, 2024.",
         details: {
             cast: ["Ryan Reynolds", "Hugh Jackman"],
